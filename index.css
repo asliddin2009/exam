@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--back);
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root {
+  --back: rgb(232, 239, 245);
+  --white: rgb(255, 255, 255);
+  --green-black: rgb(79, 156, 156);
+  --green: rgb(107, 189, 188);
+  --yellow: rgb(171, 181, 112);
+  --grey: rgb(197, 200, 206);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 750px;
+  margin: 150px auto;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--green);
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.title,
+.info-text,
+.bottom__left-title,
+.bottom__left-price,
+.bottom__left-info,
+.bottom__right-title,
+.bottom__right-info {
+  padding-left: 40px;
+}
+
+.info-text {
+  color: rgb(197, 222, 85);
+  padding-bottom: 20px;
+}
+
+.top_info-text {
+  color: grey;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.bottom__left {
+  background-color: var(--green-black);
+  width: 50%;
+  border-bottom-left-radius: 10px;
+}
+
+.bottom__right {
+  background-color: var(--green);
+  width: 50%;
+  border-bottom-right-radius: 10px;
+}
+
+.bottom__left-title {
+  padding-top: 50px;
+  color: var(--white);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.bottom__right-title {
+  padding-top: 50px;
+  color: var(--white);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.bottom__left-price {
+  font-size: 30px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.bottom__left-price span {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.bottom__left-info {
+  color: var(--white);
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* width: 200px; */
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 40px;
+  background-color: rgb(189, 213, 81);
+  border-radius: 7px;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.bottom__right-info {
+  color: var(--white);
+  font-size: 16px;
+  padding-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding-right: 40px;
+}
+
+@media (max-width: 576px) {
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom__left,
+  .bottom__right {
+    width: 100%;
+  }
+
+  .bottom__left {
+    border-radius: 0;
+  }
+
+  .bottom__right {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+footer {
+  background: #161722;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+li > a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.input__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  padding-bottom: 20px;
+}
+
+.section2,
+.section3 {
+  width: 100px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section4 {
+  width: 450px;
+}
+
+.listIcon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+form input {
+  width: 300px;
+  height: 50px;
+  color: var(--white);
+  background-color: #161722;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.input__btn {
+  width: 200px;
+  height: 50px;
+  background: #ffd2a4;
+  border-radius: 12px;
+  border: none;
+  margin-left: -25px;
+}
+
+form {
+  display: flex;
+}
